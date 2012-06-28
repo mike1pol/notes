@@ -1,0 +1,202 @@
+body {
+	font-family: Sans;
+	font-size: 0.8em;
+}
+
+img {
+	border: none;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Sans;
+}
+
+.wrapper {
+	padding: 0 1.5ex 1.5ex 1.5ex;
+}
+
+#em_x {
+	display:inline;
+	visibility: hidden;
+}
+
+#menu {
+	width: 100%;
+	border: none;
+	margin: 0;
+	margin-top: 2px;
+	padding: 0;
+	border-collapse: collapse;
+}
+
+#menu td {
+	vertical-align: middle;
+	margin: 0;
+	padding: 3px 10px 3px 10px;
+	border: 1px solid gray;
+	text-align: center;
+	white-space: nowrap;
+}
+
+#menu a {
+	color: #00f;
+}
+
+#menu .page {
+	white-space: nowrap;
+	border: none;
+	border-bottom: 1px solid gray;
+}
+
+#menu .page a {
+	color: #000;
+}
+
+#menu .active_page {
+	border: 1px solid gray;
+	border-bottom:none;
+}
+
+#menu .enter {
+	white-space: nowrap;
+	border: none;
+	border-bottom: 1px solid gray;
+	text-align: right;
+}
+
+#menu .buttons {
+	text-align: left;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 100%;
+}
+
+#stickers {
+	display: none;
+}
+
+.sticker {
+	display: inline;
+	position:absolute;
+	border: 1px solid gray;
+	cursor: move;
+	color: #000;
+}
+
+.sticker a {
+	color: #00f;
+}
+
+.toolbar {
+	text-align: right;
+}
+
+.edit_in_place {
+	display: block;
+	margin: 0;
+	cursor: normal;
+	font-family: Sans;
+	font-size: 100%;
+	border: none;
+	overflow: auto;
+	background:none;
+	cursor: text;
+}
+
+.colorpicker {
+	float: left;
+	width: 5px;
+	height: 5px;
+	border: 1px solid gray;
+	border-left: none;
+	border-top: none;
+	cursor: pointer;
+	position: relative;
+	font-size: 1px;
+}
+
+.sticker img {
+	cursor: pointer;
+}
+
+/* ÷вета по умолчанию */
+.sticker_color0 {
+	background-color: #ff9;
+	color: #000;
+}
+
+.sticker_color0 .colorpicker {
+	background-color: lightblue; /* следующий цвет */
+}
+
+/* blue */
+.sticker_color1 {
+	background-color: lightblue;
+}
+
+.sticker_color1 .colorpicker {
+	background-color: #fcc; /* следующий цвет */
+}
+
+/* red */
+.sticker_color2 {
+	background-color: #fcc;
+}
+
+.sticker_color2 .colorpicker {
+	background-color: #cfc; /* следующий цвет */
+}
+
+/* green */
+.sticker_color3 {
+	background-color: #cfc;
+}
+
+.sticker_color3 .colorpicker {
+	background-color: pink; /* следующий цвет */
+}
+
+/* heart */
+.sticker_color4 {
+	background: url(/themes/notes/img/heart.png); 
+}
+
+.sticker_color4 .colorpicker {
+	background-color: #ff9; /* следующий цвет */
+}
+
+#ajax table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#menu a.subscribe {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.droppable {
+	background-color: #ff9;
+}
+
+.droppable a {
+	text-decoration: none;
+}
+
+/* fixed right-bottom div */
+#fixme {
+  /* Netscape 4, IE 4.x-5.0/Win and other lesser browsers will use this */
+  position: absolute; right: 20px; bottom: 10px;
+}
+body div#fixme {
+  /* used by Opera 5+, Netscape6+/Mozilla, Konqueror, Safari, OmniWeb 4.5+, iCab, ICEbrowser */
+  position: fixed;
+}
+
+#fixme a {
+	color: #00f;
+}
